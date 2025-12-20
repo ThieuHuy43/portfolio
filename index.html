@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio - Nguyen Thieu Huy | AI Engineer Intern" />
+  <title>Nguyen Thieu Huy | AI Engineer Intern</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Inter font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Topbar -->
+  <header class="topbar" role="banner">
+    <div class="container topbar__inner">
+      <a class="brand" href="#home" aria-label="Go to top">
+        <span class="brand__mark" aria-hidden="true">H</span>
+        <span class="brand__name">Nguyen Thieu Huy</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#awards">Awards</a>
+        <a class="btn btn--small" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="home">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="pill">
+            AI Engineer Intern · GenAI / CV / Multimodal
+          </p>
+
+          <h1 class="hero__title">
+            Xây dựng hệ thống AI end-to-end: <span class="grad">LLM fine-tuning</span>, RAG, và multimodal learning.
+          </h1>
+
+          <p class="hero__subtitle">
+            Mình là sinh viên năm cuối AI. Mạnh về triển khai mô hình (PyTorch), tối ưu pipeline,
+            và đưa hệ thống chạy thực tế (FastAPI + Docker).
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#projects">Xem Projects</a>
+            <a class="btn btn--ghost" href="#contact">Liên hệ</a>
+          </div>
+
+          <div class="hero__meta">
+            <a class="chip" href="mailto:n.thieuhuy43@gmail.com">
+              n.thieuhuy43@gmail.com
+            </a>
+            <span class="dot" aria-hidden="true">•</span>
+            <a class="chip" href="https://github.com/ThieuHuy43" target="_blank" rel="noreferrer">
+              github.com/ThieuHuy43
+            </a>
+            <span class="dot" aria-hidden="true">•</span>
+            <a class="chip" href="https://www.linkedin.com/in/thieuhuy43/" target="_blank" rel="noreferrer">
+              linkedin.com/in/thieuhuy43
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero__card" aria-label="Quick highlights">
+          <div class="card">
+            <div class="card__header">
+              <h2 class="card__title">Highlights</h2>
+              <p class="card__hint">Tóm tắt nhanh</p>
+            </div>
+
+            <div class="card__body">
+              <ul class="highlights">
+                <li>
+                  <span class="badge">LLM</span>
+                  <div>
+                    <strong>DentalGPT</strong>
+                    <div class="muted">Fine-tune DeepSeek-R1 8B với LoRA + RAG</div>
+                  </div>
+                </li>
+                <li>
+                  <span class="badge">Research</span>
+                  <div>
+                    <strong>AMAF-Net</strong>
+                    <div class="muted">FSCIL multimodal · Best Paper ICAI 2025</div>
+                  </div>
+                </li>
+                <li>
+                  <span class="badge">Stack</span>
+                  <div>
+                    <strong>PyTorch · FastAPI · Docker</strong>
+                    <div class="muted">Pipeline, deployment, experiment tracking</div>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="card__footer">
+                <a class="btn btn--small btn--ghost" href="#contact">Get in touch</a>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Projects</h2>
+          <p class="muted">
+            Một vài dự án tiêu biểu (ưu tiên tính “đưa vào chạy được” + metric).
+          </p>
+        </div>
+
+        <div class="grid cards">
+          <article class="card project">
+            <div class="project__top">
+              <h3>DentalGPT — Vietnamese Dental Healthcare AI Assistant</h3>
+              <span class="tag">Graduation Project</span>
+            </div>
+            <p class="muted">
+              Fine-tuned LLM 8B bằng LoRA/PEFT, xây dựng RAG pipeline và backend streaming inference cho hỏi–đáp nha khoa tiếng Việt.
+            </p>
+            <ul class="list">
+              <li><strong>LoRA</strong> (r=64, α=128), target q/k/v/o + gate/up/down.</li>
+              <li><strong>RAG</strong> với ChromaDB + FAISS + keyword retrieval.</li>
+              <li>Đánh giá: Perplexity, BLEU, ROUGE, METEOR, BERTScore.</li>
+            </ul>
+            <div class="project__bottom">
+              <div class="stack">
+                <span>Python</span><span>PyTorch</span><span>HuggingFace</span><span>FastAPI</span><span>Docker</span>
+              </div>
+              <div class="links">
+                <a href="#" aria-label="DentalGPT repo (add link)">Repo</a>
+                <a href="#" aria-label="DentalGPT demo (add link)">Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="project__top">
+              <h3>AMAF-Net — Adaptive Multi-modal Alignment Framework</h3>
+              <span class="tag">Research</span>
+            </div>
+            <p class="muted">
+              Framework cho Few-shot Class-Incremental Learning (FSCIL) trong bối cảnh multimodal, giảm catastrophic forgetting bằng alignment + prototype refinement.
+            </p>
+            <ul class="list">
+              <li>Outperformed SOTA trên <strong>TFS-Fruit</strong> và <strong>MiniImageNet</strong>.</li>
+              <li>Thành tích: <strong>Best Paper Award — ICAI 2025</strong>.</li>
+              <li>Focus: stability qua các incremental sessions.</li>
+            </ul>
+            <div class="project__bottom">
+              <div class="stack">
+                <span>PyTorch</span><span>FSCIL</span><span>CLIP/ViT</span>
+              </div>
+              <div class="links">
+                <a href="#" aria-label="Paper link (add link)">Paper</a>
+                <a href="#" aria-label="Code link (add link)">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="project__top">
+              <h3>Hybrid & BERT4Rec E-commerce Recommendation System</h3>
+              <span class="tag">Applied ML</span>
+            </div>
+            <p class="muted">
+              Hệ thống gợi ý sản phẩm kết hợp Hybrid Recommendation và BERT4Rec để học hành vi tuần tự theo lịch sử tương tác.
+            </p>
+            <ul class="list">
+              <li>BERT4Rec (Transformer) cho sequential recommendation.</li>
+              <li>Hybrid: collaborative filtering + content-based filtering.</li>
+              <li>Đánh giá theo Hit@K / NDCG@K (khuyến nghị ghi số nếu có).</li>
+            </ul>
+            <div class="project__bottom">
+              <div class="stack">
+                <span>Python</span><span>PyTorch</span><span>Pandas</span><span>Scikit-learn</span>
+              </div>
+              <div class="links">
+                <a href="#" aria-label="Recommender repo (add link)">Repo</a>
+                <a href="#" aria-label="Report link (add link)">Report</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience (optional) -->
+    <section id="experience" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2>Experience</h2>
+          <p class="muted">Bạn có thể thêm intern, research assistant, hoặc dự án freelance tại đây.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <div class="timeline__top">
+                <h3>AI Research Project — AMAF-Net</h3>
+                <span class="muted">2025</span>
+              </div>
+              <p class="muted">
+                Nghiên cứu FSCIL multimodal, viết paper, ablation, và chuẩn hóa pipeline đánh giá.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <div class="timeline__top">
+                <h3>Graduation Project — DentalGPT</h3>
+                <span class="muted">2025</span>
+              </div>
+              <p class="muted">
+                Xây dựng hệ thống GenAI: fine-tuning, retrieval, backend streaming, containerization.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Skills</h2>
+          <p class="muted">Tập trung vào thứ bạn dùng thật, tránh liệt kê quá dài.</p>
+        </div>
+
+        <div class="grid skills">
+          <div class="card">
+            <h3>Languages</h3>
+            <div class="pillset">
+              <span class="pill2">Python</span>
+              <span class="pill2">C++</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>ML / GenAI</h3>
+            <div class="pillset">
+              <span class="pill2">Transformers</span>
+              <span class="pill2">LoRA / PEFT</span>
+              <span class="pill2">RAG</span>
+              <span class="pill2">BERTScore</span>
+              <span class="pill2">CLIP / ViT</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Frameworks</h3>
+            <div class="pillset">
+              <span class="pill2">PyTorch</span>
+              <span class="pill2">HuggingFace</span>
+              <span class="pill2">Scikit-learn</span>
+              <span class="pill2">FastAPI</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Tools</h3>
+            <div class="pillset">
+              <span class="pill2">Docker</span>
+              <span class="pill2">Git</span>
+              <span class="pill2">Linux</span>
+              <span class="pill2">MLflow</span>
+              <span class="pill2">W&B</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards -->
+    <section id="awards" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2>Honors & Awards</h2>
+          <p class="muted">Điểm mạnh khác biệt của bạn.</p>
+        </div>
+
+        <div class="grid cards">
+          <div class="card award">
+            <h3>Best Paper Award — ICAI 2025</h3>
+            <p class="muted">
+              For the paper “AMAF-Net: Training-Free Multi-Modal Alignment for Fine-Grained Counterfeit Fruit Detection”.
+            </p>
+          </div>
+
+          <div class="card award">
+            <h3>Academic Excellence Scholarship</h3>
+            <p class="muted">Two consecutive semesters.</p>
+          </div>
+
+          <div class="card award">
+            <h3>Research Merit Distinction</h3>
+            <p class="muted">AI research activities and competitions in ML and CV.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact">
+          <div>
+            <h2>Liên hệ</h2>
+            <p class="muted">
+              Muốn trao đổi về internship, research hoặc dự án GenAI? Gửi mail cho mình nhé.
+            </p>
+
+            <div class="contact__rows">
+              <div class="contact__row">
+                <span class="contact__label">Email</span>
+                <a href="mailto:n.thieuhuy43@gmail.com">n.thieuhuy43@gmail.com</a>
+              </div>
+              <div class="contact__row">
+                <span class="contact__label">GitHub</span>
+                <a href="https://github.com/ThieuHuy43" target="_blank" rel="noreferrer">github.com/ThieuHuy43</a>
+              </div>
+              <div class="contact__row">
+                <span class="contact__label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/thieuhuy43/" target="_blank" rel="noreferrer">linkedin.com/in/thieuhuy43</a>
+              </div>
+            </div>
+
+            <p class="muted small">
+              Gợi ý: thêm link CV PDF, demo, paper, và repo thật ở phần Projects.
+            </p>
+          </div>
+
+          <div class="card contact__card">
+            <h3>Tải CV</h3>
+            <p class="muted">Đặt file CV.pdf cùng thư mục và sửa đường dẫn bên dưới.</p>
+            <a class="btn" href="NguyenThieuHuy_AI_Engineer_Intern_CV.pdf" download>Download CV (PDF)</a>
+            <div class="divider"></div>
+            <h3>Quick note</h3>
+            <p class="muted small">
+              Portfolio này thuần HTML/CSS, dễ host trên GitHub Pages / Netlify.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" role="contentinfo">
+      <div class="container footer__inner">
+        <span class="muted small">© <span id="y"></span> Nguyen Thieu Huy</span>
+        <span class="muted small">Built with HTML & CSS</span>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // Set year
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
