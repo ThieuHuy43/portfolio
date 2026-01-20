@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="About Me — Nguyen Thieu Huy. Learn more about my background, interests, and journey in AI/ML." />
+  <meta name="author" content="Nguyen Thieu Huy" />
+  <title>About Me | Nguyen Thieu Huy</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="topnav">
+    <div class="container topnav__inner">
+      <a class="topnav__brand" href="index.html">Nguyen Thieu Huy</a>
+      <nav class="topnav__links" aria-label="Primary">
+        <a href="about.html" aria-current="page">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="projects.html">Projects</a>
+        <a href="experience.html">Experience</a>
+        <a href="blog.html">Blog</a>
+        <a href="cv.html">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container layout">
+    <aside class="sidebar">
+      <div class="profile">
+        <img class="profile__avatar" src="xinh.jpg" alt="Nguyen Thieu Huy" />
+        <h1 class="profile__name">Nguyen Thieu Huy</h1>
+        <p class="profile__role">AI Engineer Intern</p>
+
+        <div class="profile__meta">
+          <p class="meta__item">Hanoi, Vietnam</p>
+          <a class="meta__item" href="mailto:n.thieuhuy43@gmail.com">n.thieuhuy43@gmail.com</a>
+          <a class="meta__item" href="https://github.com/ThieuHuy43" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="meta__item" href="https://www.linkedin.com/in/thieuhuy43/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+
+        <div class="profile__cta">
+          <a class="btn" href="cv.html">View CV</a>
+          <a class="btn btn--ghost" href="CV.pdf">Download CV</a>
+        </div>
+      </div>
+    </aside>
+
+    <section class="content">
+      <article class="page">
+        <h1>About Me</h1>
+        
+        <p>
+          Hi! I'm <strong>Huy</strong>, a final-year student passionate about Artificial Intelligence, 
+          particularly in <strong>Large Language Models (LLMs)</strong> and <strong>Computer Vision</strong>. 
+          I love building end-to-end AI systems that solve real-world problems.
+        </p>
+
+        <hr class="sep" />
+
+        <h2>Background</h2>
+        <p>
+          Currently pursuing my degree in AI/ML, I've focused my studies on deep learning, 
+          natural language processing, and computer vision. My academic journey has been enriched 
+          by hands-on research and practical projects that bridge theory and application.
+        </p>
+
+        <p>
+          My graduation project, <strong>DentalGPT</strong>, combines my interests in healthcare and AI. 
+          I fine-tuned an 8B parameter LLM using LoRA and built a RAG pipeline to create an intelligent 
+          assistant for dental healthcare in Vietnamese. This project taught me the intricacies of 
+          model optimization, retrieval systems, and production deployment.
+        </p>
+
+        <hr class="sep" />
+
+        <h2>Research Interests</h2>
+        <div class="card">
+          <h3>Large Language Models & GenAI</h3>
+          <p>
+            I'm fascinated by how LLMs can be adapted to specific domains through fine-tuning techniques 
+            like LoRA and QLoRA. My focus is on making these powerful models more accessible and applicable 
+            to real-world use cases, particularly in low-resource languages like Vietnamese.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Few-Shot & Continual Learning</h3>
+          <p>
+            My research on AMAF-Net explores how models can learn new concepts from limited data while 
+            retaining previous knowledge. This work on Few-Shot Class-Incremental Learning (FSCIL) with 
+            multimodal alignment earned recognition at ICAI 2025.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Retrieval-Augmented Generation (RAG)</h3>
+          <p>
+            I believe RAG systems are key to making LLMs more reliable and grounded. I enjoy designing 
+            efficient retrieval pipelines using vector databases like ChromaDB and FAISS, and optimizing 
+            chunking strategies for better context retrieval.
+          </p>
+        </div>
+
+        <hr class="sep" />
+
+        <h2>What Drives Me</h2>
+        <p>
+          I'm motivated by the potential of AI to make a meaningful impact. Whether it's building a 
+          healthcare assistant, creating recommendation systems, or advancing research in continual learning, 
+          I aim to develop solutions that are both technically sound and practically useful.
+        </p>
+
+        <p>
+          I value <strong>end-to-end thinking</strong>—from data collection and model training to evaluation 
+          and deployment. I believe great AI systems require not just good models, but thoughtful engineering, 
+          rigorous evaluation, and user-centric design.
+        </p>
+
+        <hr class="sep" />
+
+        <h2>Beyond AI</h2>
+        <p>
+          When I'm not coding or reading papers, I enjoy:
+        </p>
+        <ul class="list">
+          <li>Exploring new ML frameworks and tools</li>
+          <li>Writing technical blog posts to share what I learn</li>
+          <li>Contributing to open-source projects</li>
+          <li>Staying updated with the latest AI research and developments</li>
+        </ul>
+
+        <hr class="sep" />
+
+        <h2>Currently</h2>
+        <p>
+          I'm working as an <strong>AI Engineer Intern</strong>, focusing on LLM fine-tuning and deployment. 
+          I'm also actively looking for opportunities to contribute to impactful AI projects and collaborate 
+          with like-minded researchers and engineers.
+        </p>
+
+        <p>
+          Feel free to reach out if you'd like to discuss AI, potential collaborations, or just chat about 
+          the latest developments in machine learning!
+        </p>
+
+        <footer class="footer">
+          <span class="muted">© <span id="year"></span> Nguyen Thieu Huy</span>
+        </footer>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

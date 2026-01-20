@@ -1,0 +1,113 @@
+🎉 HƯỚNG DẪN NHANH - PORTFOLIO WEBSITE
+==========================================
+
+✅ Website của bạn đã hoàn thành! Dưới đây là các bước tiếp theo:
+
+📝 CẦN LÀM NGAY:
+-----------------
+1. THÊM ẢNH ĐẠI DIỆN:
+   - Chụp/chọn ảnh chân dung chuyên nghiệp
+   - Resize về 400x400px (hoặc 800x800px cho Retina)
+   - Đổi tên thành "avatar.jpg" hoặc "avatar.png"
+   - Thay thế file "avatar.svg" hiện tại
+
+2. KIỂM TRA THÔNG TIN:
+   - Email: n.thieuhuy43@gmail.com ✅
+   - GitHub: https://github.com/ThieuHuy43 ✅
+   - LinkedIn: https://www.linkedin.com/in/thieuhuy43/ ✅
+   - Địa chỉ: Hà Nội, Việt Nam ✅
+
+3. CÂP NHẬT LINKS CHO PROJECTS:
+   Mở file "projects.html" và thay # bằng links thật:
+   - DentalGPT: Repo link, Demo link
+   - AMAF-Net: Paper link, Code link
+   - Recommendation System: Repo link, Report link
+
+4. CẬP NHẬT LINKS CHO PUBLICATIONS:
+   Mở file "publications.html" và thêm:
+   - Paper link (DOI, arXiv, hoặc PDF)
+   - Code repository
+   - Slides (nếu có)
+
+🚀 CHẠY WEBSITE:
+-----------------
+Cách 1: Mở trực tiếp
+   - Double-click file "index.html"
+   - Website sẽ mở trong browser mặc định
+
+Cách 2: Dùng VS Code Live Server (khuyến nghị)
+   - Mở folder trong VS Code
+   - Right-click vào index.html
+   - Chọn "Open with Live Server"
+   - Website tự động reload khi bạn chỉnh sửa!
+
+Cách 3: Python HTTP Server
+   Mở terminal trong folder này và chạy:
+   python -m http.server 8000
+   Sau đó mở: http://localhost:8000
+
+🌐 DEPLOY LÊN INTERNET:
+--------------------------
+GITHUB PAGES (Free, Khuyến nghị):
+   1. Tạo repository mới: github.com/ThieuHuy43/portfolio
+   2. Upload tất cả files
+   3. Settings → Pages → Source: main branch
+   4. Website live tại: thieuhuy43.github.io/portfolio
+
+NETLIFY (Rất dễ):
+   1. Đăng ký tài khoản tại netlify.com
+   2. Kéo thả folder vào Netlify
+   3. Xong! Website live ngay lập tức
+
+🎨 TÙY CHỈNH:
+--------------
+Thay đổi màu sắc:
+   - Mở file "styles.css"
+   - Tìm ":root" ở đầu file
+   - Thay đổi các giá trị màu theo ý muốn
+
+Thêm/xóa sections:
+   - Xóa link khỏi navigation nếu không cần
+   - Ví dụ: xóa "Blog" nếu chưa viết blog
+
+⚡ TÍNH NĂNG ĐẶC BIỆT:
+----------------------
+✨ Dark Mode tự động (theo system preferences)
+✨ Responsive design (mobile-friendly)
+✨ SEO-optimized
+✨ Smooth animations
+✨ Fast loading
+
+📱 KIỂM TRA RESPONSIVE:
+------------------------
+   1. Mở website trong browser
+   2. Nhấn F12 (Developer Tools)
+   3. Click icon mobile/tablet
+   4. Test các kích thước khác nhau
+
+💡 MẸO HAY:
+-----------
+- Dùng ảnh avatar chất lượng cao (tối thiểu 400x400px)
+- Viết mô tả ngắn gọn, súc tích
+- Thêm links thật cho tất cả projects
+- Cập nhật CV.pdf thường xuyên
+- Chia sẻ link portfolio trên LinkedIn, CV
+
+🐛 TROUBLESHOOTING:
+-------------------
+Q: Ảnh avatar không hiển thị?
+A: Đảm bảo file ảnh cùng folder với index.html và tên đúng
+
+Q: CSS không load?
+A: Kiểm tra file styles.css cùng folder với các file HTML
+
+Q: Links không hoạt động?
+A: Thay thế tất cả "#" bằng URLs thật
+
+📧 HỖ TRỢ:
+----------
+Nếu cần hỗ trợ, tạo issue trên GitHub hoặc liên hệ qua email.
+
+---
+🎯 Chúc bạn thành công với portfolio website!
+Website design by GitHub Copilot ✨

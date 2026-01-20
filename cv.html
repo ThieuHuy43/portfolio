@@ -3,13 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Nguyen Thieu Huy — AI Engineer Intern specializing in GenAI/LLM and Computer Vision. Graduate research on DentalGPT and AMAF-Net (Best Paper Award ICAI 2025)." />
-  <meta name="keywords" content="AI Engineer, Machine Learning, LLM, GenAI, Computer Vision, RAG, Fine-tuning" />
+  <meta name="description" content="CV — Nguyen Thieu Huy. Download my curriculum vitae and professional resume." />
   <meta name="author" content="Nguyen Thieu Huy" />
-  <meta property="og:title" content="Nguyen Thieu Huy — AI Engineer Portfolio" />
-  <meta property="og:description" content="AI Engineer Intern specializing in GenAI/LLM and Computer Vision" />
-  <meta property="og:type" content="website" />
-  <title>Home | Nguyen Thieu Huy</title>
+  <title>CV | Nguyen Thieu Huy</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,11 +19,11 @@
       <a class="topnav__brand" href="index.html">Nguyen Thieu Huy</a>
       <nav class="topnav__links" aria-label="Primary">
         <a href="about.html">About</a>
-        <a href="experience.html">Experience</a>
-        <a href="projects.html">Projects</a>
         <a href="publications.html">Publications</a>
+        <a href="projects.html">Projects</a>
+        <a href="experience.html">Experience</a>
         <a href="blog.html">Blog</a>
-        <a href="cv.html">CV</a>
+        <a href="cv.html" aria-current="page">CV</a>
       </nav>
     </div>
   </header>
@@ -37,7 +33,7 @@
       <div class="profile">
         <img class="profile__avatar" src="xinh.jpg" alt="Nguyen Thieu Huy" />
         <h1 class="profile__name">Nguyen Thieu Huy</h1>
-        <p class="profile__role">AI Engineer Intern</p>
+        <p class="profile__role">AI Engineer</p>
 
         <div class="profile__meta">
           <p class="meta__item">Hanoi, Vietnam</p>
@@ -47,36 +43,32 @@
         </div>
 
         <div class="profile__cta">
-          <a class="btn" href="cv.html">View CV</a>
-          <a class="btn btn--ghost" href="CV.pdf">Download CV</a>
+          <a class="btn" href="CV.pdf">Open PDF</a>
+          <a class="btn btn--ghost" href="CV.pdf" download>Download CV</a>
         </div>
       </div>
     </aside>
 
     <section class="content">
       <article class="page">
-        <h1>Home</h1>
+        <h1>CV</h1>
         <p>
-          I'm a <strong>final-year AI student</strong>, focusing on <strong>GenAI/LLM</strong> and
-          <strong>Computer Vision</strong>. I enjoy building end-to-end projects: data → model → evaluation → deployment.
-        </p>
-        <p>
-          Graduation project: <strong>DentalGPT</strong> — fine-tuned an 8B LLM with <strong>LoRA</strong> and built a
-          <strong>RAG pipeline</strong> (ChromaDB + FAISS) for Vietnamese dental healthcare Q&A, with
-          <strong>FastAPI streaming inference</strong>.
-        </p>
-        <p>
-          Research: <strong>AMAF-Net</strong> (FSCIL multimodal), achieved <strong>Best Paper Award — ICAI 2025</strong>.
+          You can download my CV PDF here: <a href="CV.pdf">CV.pdf</a>.
         </p>
 
-        <hr class="sep" />
-
-        <h2>Highlights</h2>
-        <ul class="list">
-          <li><strong>LLM</strong>: DeepSeek-R1 8B fine-tuning (LoRA r=64, α=128) + RAG</li>
-          <li><strong>Research</strong>: FSCIL multimodal, alignment + prototype refinement</li>
-          <li><strong>Deployment</strong>: FastAPI, streaming inference, Docker</li>
-        </ul>
+        <div class="card">
+          <div class="card__head">
+            <h3>CV Preview</h3>
+            <span class="tag">PDF</span>
+          </div>
+          <p class="muted">
+            Supported browsers will display the PDF directly. Otherwise, you can download it.
+          </p>
+          <div class="card__links">
+            <a href="CV.pdf">Open</a>
+            <a href="CV.pdf" download>Download</a>
+          </div>
+        </div>
 
         <footer class="footer">
           <span class="muted">© <span id="year"></span> Nguyen Thieu Huy</span>

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Experience — Nguyen Thieu Huy. Work experience and internships in AI/ML." />
+  <meta name="author" content="Nguyen Thieu Huy" />
+  <title>Experience | Nguyen Thieu Huy</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="topnav">
+    <div class="container topnav__inner">
+      <a class="topnav__brand" href="index.html">Nguyen Thieu Huy</a>
+      <nav class="topnav__links" aria-label="Primary">
+        <a href="about.html">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="projects.html">Projects</a>
+        <a href="experience.html" aria-current="page">Experience</a>
+        <a href="blog.html">Blog</a>
+        <a href="cv.html">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container layout">
+    <aside class="sidebar">
+      <div class="profile">
+        <img class="profile__avatar" src="xinh.jpg" alt="Nguyen Thieu Huy" />
+        <h1 class="profile__name">Nguyen Thieu Huy</h1>
+        <p class="profile__role">AI Engineer</p>
+
+        <div class="profile__meta">
+          <p class="meta__item">Hanoi, Vietnam</p>
+          <a class="meta__item" href="mailto:n.thieuhuy43@gmail.com">n.thieuhuy43@gmail.com</a>
+          <a class="meta__item" href="https://github.com/ThieuHuy43" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="meta__item" href="https://www.linkedin.com/in/thieuhuy43/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+
+        <div class="profile__cta">
+          <a class="btn" href="cv.html">View CV</a>
+          <a class="btn btn--ghost" href="CV.pdf">Download CV</a>
+        </div>
+      </div>
+    </aside>
+
+    <section class="content">
+      <article class="page">
+        <h1>Experience</h1>
+        <p class="muted">Work experience and internships in AI/ML field.</p>
+
+        <div class="card">
+          <div class="card__head">
+            <h3>AI Engineer Intern</h3>
+            <span class="tag">June 2024 - Jan 2026</span>
+          </div>
+          <p class="muted">
+            <strong>Institute of Electronics, Informatics and Automation</strong> • Hanoi, Vietnam
+          </p>
+          <ul class="bullets">
+            <li>Developed and fine-tuned LLM models for domain-specific applications.</li>
+            <li>Built RAG pipeline with ChromaDB and FAISS for retrieval-augmented generation.</li>
+            <li>Implemented FastAPI backend with streaming inference for real-time responses.</li>
+            <li>Collaborated with team to optimize model performance and deployment.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card__head">
+            <h3>Research Assistant</h3>
+            <span class="tag">Feb 2024 - June 2025</span>
+          </div>
+          <p class="muted">
+            <strong>Thuyloi University AI Lab</strong> • Hanoi, Vietnam
+          </p>
+          <ul class="bullets">
+            <li>Researched Few-Shot Class-Incremental Learning (FSCIL) for computer vision.</li>
+            <li>Developed AMAF-Net framework with multimodal alignment.</li>
+            <li>Published paper at ICAI 2025 conference (Best Paper Award).</li>
+            <li>Conducted experiments and benchmarks on TFS-Fruit, MiniImageNet datasets.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card__head">
+            <h3>Machine Learning Intern</h3>
+            <span class="tag">Summer 2024</span>
+          </div>
+          <p class="muted">
+            <strong>E-commerce Company</strong> • Remote
+          </p>
+          <ul class="bullets">
+            <li>Built hybrid recommendation system (Collaborative + Content-based filtering).</li>
+            <li>Implemented BERT4Rec for sequential recommendation modeling.</li>
+            <li>Evaluated with metrics: Hit@K, NDCG@K, Precision@K.</li>
+            <li>Deployed model with FastAPI and Docker.</li>
+          </ul>
+        </div>
+
+        <hr class="sep" />
+
+        <h2>Skills & Technologies</h2>
+        <div class="card">
+          <h3>Programming Languages</h3>
+          <p>Python, SQL, Bash</p>
+        </div>
+
+        <div class="card">
+          <h3>ML/DL Frameworks</h3>
+          <p>PyTorch, TensorFlow, Hugging Face Transformers, scikit-learn, LangChain</p>
+        </div>
+
+        <div class="card">
+          <h3>Tools & Platforms</h3>
+          <p>Git, Docker, FastAPI, ChromaDB, FAISS, Weights & Biases, MLflow</p>
+        </div>
+
+        <div class="card">
+          <h3>Specialization</h3>
+          <p>Large Language Models (LLM), RAG Systems, Computer Vision, Few-Shot Learning, Model Fine-tuning (LoRA, QLoRA)</p>
+        </div>
+
+        <footer class="footer">
+          <span class="muted">© <span id="year"></span> Nguyen Thieu Huy</span>
+        </footer>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
