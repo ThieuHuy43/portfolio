@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Blog — Nguyen Thieu Huy. Articles about AI, Machine Learning, LLM, and RAG systems." />
+  <meta name="description" content="Blog — Nguyen Thieu Huy. Upcoming articles about AI agents, RAG systems, and LLM engineering." />
   <meta name="author" content="Nguyen Thieu Huy" />
   <title>Blog | Nguyen Thieu Huy</title>
 
@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%233b6fd6'/%3E%3Ctext x='50' y='69' font-size='56' font-family='Arial, sans-serif' font-weight='700' fill='white' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E" />
 </head>
 
 <body>
@@ -52,91 +53,16 @@
     <section class="content">
       <article class="page">
         <h1>Blog</h1>
-        <p class="muted">Technical articles and thoughts on AI/ML, LLMs, and software engineering.</p>
+        <p class="muted">Technical articles and thoughts on AI agents, RAG, and LLM systems.</p>
 
-        <div class="card">
-          <div class="card__head">
-            <h3><a href="#">Fine-Tuning an 8B LLM with LoRA for Vietnamese Healthcare</a></h3>
-            <span class="tag">Jan 2026</span>
-          </div>
+        <div class="card card--empty">
+          <h3>Coming soon</h3>
           <p class="muted">
-            A deep dive into my experience fine-tuning DeepSeek-R1 8B for DentalGPT. Covering LoRA configuration, 
-            training strategies, and lessons learned from domain adaptation.
+            I'm working on write-ups about building agentic RAG systems, MCP tooling, and lessons from
+            shipping LLM applications to production. Check back soon, or follow along on
+            <a href="https://github.com/ThieuHuy43" target="_blank" rel="noreferrer">GitHub</a> and
+            <a href="https://www.linkedin.com/in/thieuhuy43/" target="_blank" rel="noreferrer">LinkedIn</a>.
           </p>
-          <ul class="bullets">
-            <li>LoRA hyperparameters: rank 64, alpha 128, target modules selection</li>
-            <li>Dataset preparation and prompt engineering for Vietnamese medical text</li>
-            <li>Training optimization: gradient checkpointing, mixed precision, batch size tuning</li>
-            <li>Evaluation metrics: perplexity, BLEU, ROUGE, and domain-specific benchmarks</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card__head">
-            <h3><a href="#">Building a Production-Ready RAG Pipeline</a></h3>
-            <span class="tag">Dec 2025</span>
-          </div>
-          <p class="muted">
-            Practical guide to designing RAG systems that actually work in production. From chunking strategies 
-            to retrieval optimization and evaluation frameworks.
-          </p>
-          <ul class="bullets">
-            <li>Chunking strategies: semantic vs. fixed-size, overlap considerations</li>
-            <li>Vector database comparison: ChromaDB vs. FAISS vs. Pinecone</li>
-            <li>Retrieval optimization: hybrid search, reranking, query expansion</li>
-            <li>Evaluation: context relevance, answer faithfulness, latency metrics</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card__head">
-            <h3><a href="#">Understanding Few-Shot Class-Incremental Learning</a></h3>
-            <span class="tag">Nov 2025</span>
-          </div>
-          <p class="muted">
-            Exploring the challenges and solutions in FSCIL. How models can learn new classes from few examples 
-            while avoiding catastrophic forgetting.
-          </p>
-          <ul class="bullets">
-            <li>The stability-plasticity dilemma in continual learning</li>
-            <li>Prototype-based methods and feature alignment techniques</li>
-            <li>Multimodal approaches: leveraging vision and language together</li>
-            <li>Benchmarking: TFS-Fruit, MiniImageNet, and evaluation protocols</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card__head">
-            <h3><a href="#">FastAPI for ML: Streaming Inference and Best Practices</a></h3>
-            <span class="tag">Oct 2025</span>
-          </div>
-          <p class="muted">
-            How to build fast, scalable ML APIs with FastAPI. Focus on streaming responses for LLMs, 
-            async operations, and production deployment patterns.
-          </p>
-          <ul class="bullets">
-            <li>Async/await patterns for non-blocking inference</li>
-            <li>Streaming responses with Server-Sent Events (SSE)</li>
-            <li>Model loading strategies: lazy loading, caching, warm-up</li>
-            <li>Docker deployment, health checks, and monitoring</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card__head">
-            <h3><a href="#">From BERT4Rec to Modern Sequential Recommendation</a></h3>
-            <span class="tag">Sep 2025</span>
-          </div>
-          <p class="muted">
-            Evolution of sequential recommendation systems. Comparing traditional collaborative filtering, 
-            BERT4Rec, and newer transformer-based approaches.
-          </p>
-          <ul class="bullets">
-            <li>Sequential patterns in user behavior modeling</li>
-            <li>Transformer architecture advantages for recommendation</li>
-            <li>Evaluation metrics: Hit@K, NDCG@K, MRR</li>
-            <li>Hybrid approaches: combining collaborative and content-based signals</li>
-          </ul>
         </div>
 
         <footer class="footer">

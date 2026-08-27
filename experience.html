@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Experience — Nguyen Thieu Huy. Work experience and internships in AI/ML." />
+  <meta name="description" content="Experience — Nguyen Thieu Huy. AI Engineer experience at Meta Neurons, IEIA, and Thuy Loi University AI Lab." />
   <meta name="author" content="Nguyen Thieu Huy" />
   <title>Experience | Nguyen Thieu Huy</title>
 
@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%233b6fd6'/%3E%3Ctext x='50' y='69' font-size='56' font-family='Arial, sans-serif' font-weight='700' fill='white' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E" />
 </head>
 
 <body>
@@ -52,61 +53,122 @@
     <section class="content">
       <article class="page">
         <h1>Experience</h1>
-        <p class="muted">Work experience and internships in AI/ML field.</p>
+        <p class="muted">Work experience, research, and education.</p>
 
-        <div class="card">
-          <div class="card__head">
-            <h3>AI Engineer Intern</h3>
-            <span class="tag">June 2025 - Jan 2026</span>
+        <div class="timeline">
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="card">
+              <div class="card__head">
+                <h3>AI Engineer</h3>
+                <span class="tag">May 2026 – Aug 2026</span>
+              </div>
+              <p class="muted"><strong>Meta Neurons</strong> • Hanoi, Vietnam</p>
+              <ul class="bullets">
+                <li>Built and managed MCP tools and designed AI agent workflows using Claude SDK and Agno, integrating backend APIs, caching, and prompt engineering to improve agent reliability and response quality.</li>
+                <li>Wrote API documentation for backend–AI agent integration and deployed services with Docker, setting up CI/CD pipelines with Jenkins for automated build and release.</li>
+                <li>Developed an internal Telegram bot system to automate the recruitment workflow, and conducted benchmark evaluations to assess and compare agent performance.</li>
+              </ul>
+            </div>
           </div>
-          <p class="muted">
-            <strong>Institute of Electronics, Informatics and Automation</strong> • Hanoi, Vietnam
-          </p>
-          <ul class="bullets">
-            <li>Developed and fine-tuned LLM models for domain-specific applications.</li>
-            <li>Built RAG pipeline with ChromaDB and FAISS for retrieval-augmented generation.</li>
-            <li>Implemented FastAPI backend with streaming inference for real-time responses.</li>
-            <li>Collaborated with team to optimize model performance and deployment.</li>
-          </ul>
+
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="card">
+              <div class="card__head">
+                <h3>AI Engineer Intern</h3>
+                <span class="tag">July 2025 – Mar 2026</span>
+              </div>
+              <p class="muted"><strong>Institute of Electronics, Informatics and Automation</strong> • Hanoi, Vietnam</p>
+              <ul class="bullets">
+                <li>Built a RAG-based chatbot for agricultural consulting (fertilizers, crops, and technical documentation).</li>
+                <li>Developed data pipelines to process and index agricultural documents using Python and ChromaDB, achieving 92% Top-5 retrieval recall.</li>
+                <li>Improved response quality through prompt engineering, chunking, and reranking, increasing answer relevance by +18% and reducing hallucination by 25%.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="card">
+              <div class="card__head">
+                <h3>AI Research Assistant</h3>
+                <span class="tag">Feb 2024 – June 2025</span>
+              </div>
+              <p class="muted"><strong>AI Laboratory, Thuy Loi University</strong> • Hanoi, Vietnam</p>
+              <ul class="bullets">
+                <li>Built multimodal data preprocessing and training pipelines using PyTorch, Torchvision, NumPy, Pandas, and OpenCV for efficient model development and experimentation.</li>
+                <li>Trained and evaluated YOLO-based object detection and vision-language models (YOLOv8/YOLOv11, CLIP, ViT) with optimization, fine-tuning, augmentation, and ablation studies.</li>
+                <li>Published <strong>AMAF-Net</strong> at ICAI 2025 — awarded Best Paper.</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
+        <hr class="sep" />
+
+        <h2>Education</h2>
         <div class="card">
           <div class="card__head">
-            <h3>AI Research Assistant</h3>
-            <span class="tag">Feb 2024 - June 2025</span>
+            <h3>B.S. in Artificial Intelligence & Data Science</h3>
+            <span class="tag">Aug 2022 – June 2026</span>
           </div>
+          <p class="muted"><strong>Thuy Loi University</strong> • Hanoi, Vietnam</p>
+          <p>GPA: 3.33/4.0</p>
+        </div>
+
+        <hr class="sep" />
+
+        <h2>Honors & Certifications</h2>
+        <div class="card">
+          <h3>Best Paper Award — ICAI 2025</h3>
           <p class="muted">
-            <strong>Thuyloi University AI Lab</strong> • Hanoi, Vietnam
+            "AMAF-Net: Training-Free Multi-Modal Alignment for Fine-Grained Counterfeit Fruit Detection",
+            published in the ICAI 2025 proceedings. <a href="publications.html">See publication →</a>
           </p>
-          <ul class="bullets">
-            <li>Researched Few-Shot Class-Incremental Learning (FSCIL) for computer vision.</li>
-            <li>Developed AMAF-Net framework with multimodal alignment.</li>
-            <li>Published paper at ICAI 2025 conference (Best Paper Award).</li>
-            <li>Conducted experiments and benchmarks on TFS-Fruit, MiniImageNet datasets.</li>
-          </ul>
+        </div>
+        <div class="card">
+          <h3>DeepLearning.AI — Deep Learning Specialization</h3>
+          <p class="muted">Neural networks, CNNs, RNNs, sequence models, and optimization techniques.</p>
+        </div>
+        <div class="card">
+          <h3>Samsung Innovation Campus — AI Course</h3>
+          <p class="muted">Completed with Very Good grade.</p>
         </div>
 
         <hr class="sep" />
 
         <h2>Skills & Technologies</h2>
-        <div class="card">
-          <h3>Programming Languages</h3>
-          <p>Python, SQL, Bash</p>
-        </div>
-
-        <div class="card">
-          <h3>ML/DL Frameworks</h3>
-          <p>PyTorch, TensorFlow, Hugging Face Transformers, scikit-learn, LangChain</p>
-        </div>
-
-        <div class="card">
-          <h3>Tools & Platforms</h3>
-          <p>Git, Docker, FastAPI, ChromaDB, FAISS, Weights & Biases, MLflow</p>
-        </div>
-
-        <div class="card">
-          <h3>Specialization</h3>
-          <p>Large Language Models (LLM), RAG Systems, Computer Vision, Few-Shot Learning, Model Fine-tuning (LoRA, QLoRA)</p>
+        <div class="skills">
+          <div class="skills__group">
+            <h3>Programming</h3>
+            <div class="pills">
+              <span class="pill">Python</span><span class="pill">C++</span><span class="pill">C</span>
+            </div>
+          </div>
+          <div class="skills__group">
+            <h3>LLM & Agent Systems</h3>
+            <div class="pills">
+              <span class="pill">RAG</span><span class="pill">LangChain</span><span class="pill">LangGraph</span>
+              <span class="pill">LlamaIndex</span><span class="pill">Claude SDK</span><span class="pill">Agno</span>
+              <span class="pill">MCP</span><span class="pill">PEFT/LoRA</span>
+            </div>
+          </div>
+          <div class="skills__group">
+            <h3>ML/DL Frameworks</h3>
+            <div class="pills">
+              <span class="pill">PyTorch</span><span class="pill">scikit-learn</span><span class="pill">HuggingFace</span>
+              <span class="pill">OpenCV</span>
+            </div>
+          </div>
+          <div class="skills__group">
+            <h3>Tools & Systems</h3>
+            <div class="pills">
+              <span class="pill">Git</span><span class="pill">Docker</span><span class="pill">Jenkins</span>
+              <span class="pill">Linux</span><span class="pill">MLflow</span><span class="pill">FastAPI</span>
+              <span class="pill">Qdrant</span><span class="pill">ChromaDB</span>
+            </div>
+          </div>
         </div>
 
         <footer class="footer">

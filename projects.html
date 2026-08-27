@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Projects — Nguyen Thieu Huy. DentalGPT, AMAF-Net, and more AI/ML projects." />
+  <meta name="description" content="Projects — Nguyen Thieu Huy. VietTraffic Agentic RAG, agricultural RAG chatbot, and AMAF-Net research." />
   <meta name="author" content="Nguyen Thieu Huy" />
   <title>Projects | Nguyen Thieu Huy</title>
 
@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%233b6fd6'/%3E%3Ctext x='50' y='69' font-size='56' font-family='Arial, sans-serif' font-weight='700' fill='white' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E" />
 </head>
 
 <body>
@@ -52,56 +53,55 @@
     <section class="content">
       <article class="page">
         <h1>Projects</h1>
-        <p class="muted">Key projects (prioritizing end-to-end solutions with metrics).</p>
+        <p class="muted">Key projects — prioritizing end-to-end systems with real metrics.</p>
 
         <div class="card">
           <div class="card__head">
-            <h3>DentalGPT — Vietnamese Dental Healthcare AI Assistant</h3>
-            <span class="tag">Graduation</span>
+            <h3>VietTraffic — Agentic RAG for Vietnamese Traffic Law QA</h3>
+            <span class="tag">Graduation Project</span>
           </div>
           <p class="muted">
-            Fine-tuned DeepSeek-R1 8B with LoRA (r=64, α=128) and built RAG pipeline (ChromaDB + FAISS).
+            Agentic RAG platform (Gemini, DeepSeek, Groq) orchestrated with LangGraph, processing 3,000+
+            semantic legal chunks.
           </p>
           <ul class="bullets">
-            <li>LoRA target modules: q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj.</li>
-            <li>Backend: FastAPI streaming inference; Dockerized for deployment.</li>
-            <li>Metrics: Perplexity + BLEU/ROUGE/METEOR/BERTScore.</li>
+            <li>Integrated Tavily Search + a human-in-the-loop dashboard for 100% verified real-time legal consulting.</li>
+            <li>Architected a FastAPI/Docker microservice with custom NLP pipelines (PyVi + SentenceTransformers).</li>
+            <li>Reduced outdated legal advice by 100% via automated conflict resolution; improved retrieval accuracy by 40% using hierarchical chunking and Qdrant hybrid search.</li>
           </ul>
+          <p class="muted"><strong>Tech:</strong> Python, FastAPI, LangGraph, Gemini, Qdrant, Sentence Transformers, Docker</p>
           <div class="card__links">
-            <a href="#">Repo</a>
-            <a href="#">Demo</a>
+            <a href="https://github.com/ThieuHuy43/VietTraffic-Agentic-RAG" target="_blank" rel="noreferrer">GitHub Repo</a>
           </div>
         </div>
 
         <div class="card">
           <div class="card__head">
-            <h3>AMAF-Net — Adaptive Multi-modal Alignment Framework</h3>
-            <span class="tag">Research</span>
+            <h3>Agricultural RAG Chatbot</h3>
+            <span class="tag">IEIA</span>
           </div>
-          <p class="muted">Multimodal FSCIL framework with adaptive alignment and prototype refinement.</p>
+          <p class="muted">
+            RAG-based chatbot for agricultural consulting — fertilizers, crops, and technical documentation.
+          </p>
+          <ul class="bullets">
+            <li>Built data pipelines to process and index documents with Python and ChromaDB, achieving 92% Top-5 retrieval recall.</li>
+            <li>Improved answer relevance by +18% and reduced hallucination by 25% via prompt engineering, chunking, and reranking.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card__head">
+            <h3>AMAF-Net — Training-Free Multi-Modal Alignment</h3>
+            <span class="tag">Research · Best Paper ICAI 2025</span>
+          </div>
+          <p class="muted">Fine-grained counterfeit fruit detection via multimodal alignment and prototype refinement.</p>
           <ul class="bullets">
             <li>Best Paper Award — ICAI 2025.</li>
             <li>Benchmarks: TFS-Fruit, MiniImageNet.</li>
           </ul>
           <div class="card__links">
-            <a href="#">Paper</a>
-            <a href="#">Code</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card__head">
-            <h3>Hybrid & BERT4Rec E-commerce Recommendation System</h3>
-            <span class="tag">Applied ML</span>
-          </div>
-          <p class="muted">Hybrid (CF+CBF) + BERT4Rec sequential recommendation.</p>
-          <ul class="bullets">
-            <li>Transformer-based sequential modeling for user behavior.</li>
-            <li>Evaluate with Hit@K and NDCG@K.</li>
-          </ul>
-          <div class="card__links">
-            <a href="#">Repo</a>
-            <a href="#">Report</a>
+            <a href="https://thieuhuy43.github.io/amaf_paper.github.io/" target="_blank" rel="noreferrer">Paper & Code</a>
+            <a href="slide.pdf">Slides</a>
           </div>
         </div>
 

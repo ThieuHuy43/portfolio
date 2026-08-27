@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%233b6fd6'/%3E%3Ctext x='50' y='69' font-size='56' font-family='Arial, sans-serif' font-weight='700' fill='white' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E" />
 </head>
 
 <body>
@@ -33,7 +34,7 @@
       <div class="profile">
         <img class="profile__avatar" src="xinh.jpg" alt="Nguyen Thieu Huy" />
         <h1 class="profile__name">Nguyen Thieu Huy</h1>
-        <p class="profile__role">AI Engineer Intern</p>
+        <p class="profile__role">AI Engineer</p>
 
         <div class="profile__meta">
           <p class="meta__item">Hanoi, Vietnam</p>
@@ -54,54 +55,56 @@
         <h1>About Me</h1>
         
         <p>
-          Hi! I'm <strong>Huy</strong>, a final-year student passionate about Artificial Intelligence, 
-          particularly in <strong>Large Language Models (LLMs)</strong> and <strong>Computer Vision</strong>. 
-          I love building end-to-end AI systems that solve real-world problems.
+          Hi! I'm <strong>Huy</strong>, an AI Engineer focused on <strong>AI agents</strong>,
+          <strong>Retrieval-Augmented Generation (RAG)</strong>, and <strong>LLM systems</strong>.
+          I love turning research ideas into working, deployed products — from data pipelines to agent
+          orchestration to production APIs.
         </p>
 
         <hr class="sep" />
 
         <h2>Background</h2>
         <p>
-          Currently pursuing my degree in AI/ML, I've focused my studies on deep learning, 
-          natural language processing, and computer vision. My academic journey has been enriched 
-          by hands-on research and practical projects that bridge theory and application.
+          I'm a final-year AI & Data Science student at Thuy Loi University (GPA 3.33/4.0), and over the past
+          two years I've moved from computer vision research into building production AI agent and RAG systems.
+          My work spans model training and evaluation, retrieval pipeline design, and shipping agentic
+          applications with real backend integrations.
         </p>
 
         <p>
-          My graduation project, <strong>DentalGPT</strong>, combines my interests in healthcare and AI. 
-          I fine-tuned an 8B parameter LLM using LoRA and built a RAG pipeline to create an intelligent 
-          assistant for dental healthcare in Vietnamese. This project taught me the intricacies of 
-          model optimization, retrieval systems, and production deployment.
+          My graduation project, <strong>VietTraffic</strong>, is an Agentic RAG platform for Vietnamese traffic
+          law consulting — built with <strong>LangGraph</strong> orchestrating Gemini, DeepSeek, and Groq,
+          processing 3,000+ semantic legal chunks with <strong>Qdrant hybrid search</strong> and a
+          human-in-the-loop dashboard to keep every answer verified.
         </p>
 
         <hr class="sep" />
 
-        <h2>Research Interests</h2>
+        <h2>What I Work On</h2>
         <div class="card">
-          <h3>Large Language Models & GenAI</h3>
+          <h3>AI Agents & MCP Tools</h3>
           <p>
-            I'm fascinated by how LLMs can be adapted to specific domains through fine-tuning techniques 
-            like LoRA and QLoRA. My focus is on making these powerful models more accessible and applicable 
-            to real-world use cases, particularly in low-resource languages like Vietnamese.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Few-Shot & Continual Learning</h3>
-          <p>
-            My research on AMAF-Net explores how models can learn new concepts from limited data while 
-            retaining previous knowledge. This work on Few-Shot Class-Incremental Learning (FSCIL) with 
-            multimodal alignment earned recognition at ICAI 2025.
+            At <strong>Meta Neurons</strong>, I build and manage MCP tools and design agent workflows using the
+            <strong>Claude SDK</strong> and <strong>Agno</strong>, integrating backend APIs, caching, and prompt
+            engineering to improve agent reliability — plus benchmark evaluations to compare agent performance.
           </p>
         </div>
 
         <div class="card">
           <h3>Retrieval-Augmented Generation (RAG)</h3>
           <p>
-            I believe RAG systems are key to making LLMs more reliable and grounded. I enjoy designing 
-            efficient retrieval pipelines using vector databases like ChromaDB and FAISS, and optimizing 
-            chunking strategies for better context retrieval.
+            I've built RAG systems end-to-end: an agricultural consulting chatbot at IEIA (ChromaDB, 92% Top-5
+            retrieval recall) and VietTraffic's legal QA pipeline (Qdrant, hierarchical chunking, reranking).
+            I care about grounding — reducing hallucination through better chunking, retrieval, and prompt design.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Computer Vision & Research</h3>
+          <p>
+            My research background is in object detection and vision-language models (YOLOv8/v11, CLIP, ViT).
+            My paper <strong>AMAF-Net</strong>, on training-free multi-modal alignment for fine-grained
+            counterfeit fruit detection, won the <strong>Best Paper Award at ICAI 2025</strong>.
           </p>
         </div>
 
@@ -109,42 +112,33 @@
 
         <h2>What Drives Me</h2>
         <p>
-          I'm motivated by the potential of AI to make a meaningful impact. Whether it's building a 
-          healthcare assistant, creating recommendation systems, or advancing research in continual learning, 
-          I aim to develop solutions that are both technically sound and practically useful.
-        </p>
-
-        <p>
-          I value <strong>end-to-end thinking</strong>—from data collection and model training to evaluation 
-          and deployment. I believe great AI systems require not just good models, but thoughtful engineering, 
-          rigorous evaluation, and user-centric design.
+          I value <strong>end-to-end thinking</strong> — from data collection and retrieval design to
+          deployment and monitoring. I believe great AI systems need more than a good model: they need
+          thoughtful engineering, rigorous evaluation, and reliable production infrastructure.
         </p>
 
         <hr class="sep" />
 
         <h2>Beyond AI</h2>
         <p>
-          When I'm not coding or reading papers, I enjoy:
+          When I'm not shipping agents or reading papers, I enjoy:
         </p>
         <ul class="list">
-          <li>Exploring new ML frameworks and tools</li>
-          <li>Writing technical blog posts to share what I learn</li>
+          <li>Exploring new agent frameworks and LLM tooling</li>
           <li>Contributing to open-source projects</li>
-          <li>Staying updated with the latest AI research and developments</li>
+          <li>Staying current with the latest AI research and releases</li>
         </ul>
 
         <hr class="sep" />
 
         <h2>Currently</h2>
         <p>
-          I'm working as an <strong>AI Engineer Intern</strong>, focusing on LLM fine-tuning and deployment. 
-          I'm also actively looking for opportunities to contribute to impactful AI projects and collaborate 
-          with like-minded researchers and engineers.
+          I'm working as an <strong>AI Engineer at Meta Neurons</strong>, building agent workflows and MCP
+          tooling. I'm always open to discussing AI agents, RAG systems, or potential collaborations.
         </p>
 
         <p>
-          Feel free to reach out if you'd like to discuss AI, potential collaborations, or just chat about 
-          the latest developments in machine learning!
+          Feel free to reach out — <a href="mailto:n.thieuhuy43@gmail.com">n.thieuhuy43@gmail.com</a>.
         </p>
 
         <footer class="footer">

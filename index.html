@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Nguyen Thieu Huy — AI Engineer Intern specializing in GenAI/LLM and Computer Vision. Graduate research on DentalGPT and AMAF-Net (Best Paper Award ICAI 2025)." />
-  <meta name="keywords" content="AI Engineer, Machine Learning, LLM, GenAI, Computer Vision, RAG, Fine-tuning" />
+  <meta name="description" content="Nguyen Thieu Huy — AI Engineer specializing in AI agents, RAG systems, and LLM applications. Built agentic workflows at Meta Neurons and VietTraffic (Agentic RAG). Best Paper Award ICAI 2025." />
+  <meta name="keywords" content="AI Engineer, Machine Learning, LLM, GenAI, AI Agents, RAG, LangGraph, Computer Vision" />
   <meta name="author" content="Nguyen Thieu Huy" />
   <meta property="og:title" content="Nguyen Thieu Huy — AI Engineer Portfolio" />
-  <meta property="og:description" content="AI Engineer Intern specializing in GenAI/LLM and Computer Vision" />
+  <meta property="og:description" content="AI Engineer building agentic RAG systems and LLM applications" />
   <meta property="og:type" content="website" />
   <title>Home | Nguyen Thieu Huy</title>
 
@@ -15,6 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%233b6fd6'/%3E%3Ctext x='50' y='69' font-size='56' font-family='Arial, sans-serif' font-weight='700' fill='white' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E" />
 </head>
 
 <body>
@@ -37,7 +38,7 @@
       <div class="profile">
         <img class="profile__avatar" src="xinh.jpg" alt="Nguyen Thieu Huy" />
         <h1 class="profile__name">Nguyen Thieu Huy</h1>
-        <p class="profile__role">AI Engineer Intern</p>
+        <p class="profile__role">AI Engineer</p>
 
         <div class="profile__meta">
           <p class="meta__item">Hanoi, Vietnam</p>
@@ -55,27 +56,47 @@
 
     <section class="content">
       <article class="page">
-        <h1>Home</h1>
+        <div class="hero">
+          <span class="hero__eyebrow">AI Engineer · GenAI Agents & LLM Systems</span>
+          <h1>Nguyen Thieu Huy</h1>
+          <p class="hero__lead">
+            I build <strong>AI agent systems</strong> and <strong>RAG pipelines</strong> end-to-end — from data
+            and retrieval to production APIs. Currently an <strong>AI Engineer at Meta Neurons</strong>, designing
+            agent workflows with <strong>Claude SDK</strong>, <strong>Agno</strong>, and MCP tools.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="cv.html">View CV</a>
+            <a class="btn btn--ghost" href="projects.html">See Projects</a>
+          </div>
+        </div>
+
+        <hr class="sep" />
+
+        <h2>What I'm doing now</h2>
         <p>
-          I'm a <strong>final-year AI student</strong>, focusing on <strong>GenAI/LLM</strong> and
-          <strong>Computer Vision</strong>. I enjoy building end-to-end projects: data → model → evaluation → deployment.
+          At <strong>Meta Neurons</strong>, I design and manage <strong>MCP tools</strong> and AI agent workflows,
+          integrating backend APIs, caching, and prompt engineering to improve reliability. I also ship with
+          <strong>Docker</strong> and <strong>Jenkins CI/CD</strong>, and built an internal Telegram bot that
+          automates recruitment.
         </p>
         <p>
-          Graduation project: <strong>DentalGPT</strong> — fine-tuned an 8B LLM with <strong>LoRA</strong> and built a
-          <strong>RAG pipeline</strong> (ChromaDB + FAISS) for Vietnamese dental healthcare Q&A, with
-          <strong>FastAPI streaming inference</strong>.
+          My graduation project, <strong>VietTraffic</strong>, is an Agentic RAG platform for Vietnamese traffic
+          law Q&A — built with <strong>LangGraph</strong>, <strong>Qdrant hybrid search</strong>, and a
+          human-in-the-loop dashboard for 100% verified legal consulting.
         </p>
         <p>
-          Research: <strong>AMAF-Net</strong> (FSCIL multimodal), achieved <strong>Best Paper Award — ICAI 2025</strong>.
+          Research: <strong>AMAF-Net</strong> (training-free multi-modal alignment for fine-grained detection),
+          <strong>Best Paper Award — ICAI 2025</strong>.
         </p>
 
         <hr class="sep" />
 
         <h2>Highlights</h2>
         <ul class="list">
-          <li><strong>LLM</strong>: DeepSeek-R1 8B fine-tuning (LoRA r=64, α=128) + RAG</li>
-          <li><strong>Research</strong>: FSCIL multimodal, alignment + prototype refinement</li>
-          <li><strong>Deployment</strong>: FastAPI, streaming inference, Docker</li>
+          <li><strong>Agentic RAG</strong>: LangGraph, Qdrant hybrid search, Tavily, HITL verification</li>
+          <li><strong>Agents & MCP</strong>: Claude SDK, Agno, prompt engineering, benchmark evaluation</li>
+          <li><strong>Deployment</strong>: FastAPI, Docker, Jenkins CI/CD</li>
+          <li><strong>Research</strong>: YOLOv8/v11, CLIP, ViT, multimodal alignment (Best Paper — ICAI 2025)</li>
         </ul>
 
         <footer class="footer">
